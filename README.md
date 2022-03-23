@@ -5,5 +5,7 @@ This package solves a simple issue - you need a consistent random number between
 ## Usage
 
 ```javascript
+import generateDailyRandomNumber from "daily-random";
+
 const dailyRandom = generateDailyRandomNumber(); // 0.9516682408248016
 ```
