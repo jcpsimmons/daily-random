@@ -1,0 +1,35 @@
+{
+  "name": "daily-random",
+  "version": "1.0.1",
+  "description": "generate a consistent random number every day",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcpsimmons/daily-random.git"
+  },
+  "keywords": [
+    "random",
+    "seed"
+  ],
+  "author": "Josh C. Simmons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcpsimmons/daily-random/issues"
+  },
+  "homepage": "https://github.com/jcpsimmons/daily-random#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.22"
+  }
+}
